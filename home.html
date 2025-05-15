@@ -1,22 +1,42 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
     <title>Tom Corley - CV and Portfolio</title>
+    <meta name="description" content="Tom Corley's professional CV and portfolio website.">
+    <meta name="author" content="Tom Corley">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="cvstyle.css">
 </head>
 
 <body>
+    <header>
+        <nav class="navbar">
+            <ul class="nav-list">
+                <li><a href="#about">About</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#interests">Interests</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
     <div class="container">
-        <h1>Tom Corley - Portfolio Website</h1>
+
+        <h1 id="top">Tom Corley - Portfolio Website</h1>
         <p><strong>Email:</strong> tomcorley86@gmail.com | <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/tom-corley" target="_blank">tom-corley</a></p>
         <p><strong>Location:</strong> London, UK</p>
+        
+        <img id="profile-image" src="frac.png">
 
-        <section>
+        <section id="about">
             <h2>About Me</h2>
             <p>I am a 4th year Mathematics (MMath) student at the University of Warwick, graduating in June. I grew up in SE London and am seeking entry-level roles or internships to apply my technical skills and drive impactful solutions.</p>
         </section>
 
-        <section>
+        <section id="education">
             <h2>Education</h2>
             <ul>
                 <li><strong>University of Warwick (+ LMU München)</strong><br>
@@ -31,14 +51,14 @@
             </ul>
         </section>
 
-        <section>
+        <section id="skills">
             <h2>Skills</h2>
             <p><strong>Languages:</strong> Python, Java, C/C++, Haskell, SQL, HTML/CSS</p>
             <p><strong>Technologies:</strong> AWS (Lambda, S3), Git, Django, OpenMP, MPI, Tkinter</p>
             <p><strong>Certifications:</strong> AWS Cloud Practitioner, AWS Developer Associate, PCAP (Python)</p>
         </section>
 
-        <section>
+        <section id="projects">
             <h2>Projects</h2>
             <ul>
                 <li><strong>Frogify</strong> – Microservices app using the Spotify API for playlist analytics<br>
@@ -48,7 +68,7 @@
             </ul>
         </section>
 
-        <section>
+        <section id="interests">
             <h2>Interests</h2>
             <ul>
                 <li>German Language – Pursuing C1 Certification</li>
@@ -56,6 +76,44 @@
                 <li>Running & Fitness – Ran a sub-2-hr half-marathon to raise money for Autism Awareness</li>
             </ul>
         </section>
+
+        <section id="table">
+            <h2>Cars Outside the Window</h2>
+            <table>
+                <tr>
+                    <th>Brand</th>
+                    <th>Model</th>
+                    <th>Colour</th>
+                    <th>Year</th>
+                </tr>
+                <tr>
+                    <td>Ford</td>
+                    <td>Fiesta</td>
+                    <td>Grey</td>
+                    <td>2011</td>
+                </tr>
+            </table>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Form</h2>
+            <form>
+                <label for="name">Name:</label><br>
+                <input type="text" id="name"><br>
+
+                <label for="email">Email:</label><br>
+                <input type="email" id="email"><br>
+
+                <label for="message">Message:</label><br>
+                <textarea id="message" rows="5" cols="30"></textarea><br>
+
+                <input type="submit" value="Submit">
+            </form>
+        </section>
     </div>
+
+    <footer>
+        <p>&copy; 2025 Tom Corley</p>
+    </footer>
 </body>
 </html>

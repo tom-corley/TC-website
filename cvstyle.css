@@ -8,11 +8,44 @@ body {
 
 .container {
     max-width: 900px;
-    margin: 40px auto;
+    margin: 120px auto 40px;
     background-color: #ffffff;
     padding: 30px 40px;
     border-radius: 10px;
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    background-color: #003049;
+    padding: 15px 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-list li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-list li a:hover {
+    text-decoration: underline;
 }
 
 h1 {
@@ -46,6 +79,11 @@ ul {
     line-height: 1.6;
 }
 
+ol {
+    margin-left: 20px;
+    line-height: 1.6;
+}
+
 a {
     color: #0066cc;
     text-decoration: none;
@@ -57,4 +95,59 @@ a:hover {
 
 section {
     margin-top: 30px;
+}
+
+#profile-image {
+    width: 400px;
+    height: 200px;
+    margin: 0 auto 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #e6f0ff;
+}
+
+form {
+    margin-top: 20px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+input[type="submit"] {
+    background-color: #003049;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #00527a;
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #003049;
+    color: #fff;
+    margin-top: 60px;
 }
