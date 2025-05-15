@@ -1,3 +1,7 @@
+html {
+    scroll-padding-top: 80px;
+}
+
 body {
     font-family: 'Segoe UI', Tahoma, sans-serif;
     background-color: #f5f7fa;
@@ -97,10 +101,12 @@ section {
     margin-top: 30px;
 }
 
-#profile-image {
-    width: 400px;
-    height: 200px;
-    margin: 0 auto 20px;
+#test-image {
+    width: 500px;
+    height: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 table {
